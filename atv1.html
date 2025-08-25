@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora Simples</title>
+
+    <style>
+        /*A bomba do css (preguiça de criar um)*/
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        input[type="number"],
+        select,
+        button {
+            margin: 5px;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #resultado {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Calculadora Simples</h1>
+
+    <input type="number" id="n1" placeholder="Número 1">
+    <input type="number" id="n2" placeholder="Número 2">
+
+    <br>
+    <select id="operacao">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <br>
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+
+    <script src="funcoes.js"></script>
+</body>
+
+</html>
